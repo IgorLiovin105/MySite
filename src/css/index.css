@@ -112,7 +112,7 @@ body.active {
    padding: 5vh 5vw;
    display: flex;
    justify-content: space-between;
-   background: #00aa55;
+   background: #151515;
 }
 .footer__links {
    display: flex;
