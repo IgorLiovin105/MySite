@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="src/css/index.css">
+   <link rel="stylesheet" href="src/css/normalize.css">
+   <link rel="stylesheet" href="src/css/media.css">
+   <link rel="stylesheet" href="src/css/dark.css">
+</head>
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <ul class="header__list">
+            <li><a href="#about" class="header__item">обо мне</a></li>
+            <li><a class="header__item logo">Igor105</a></li>
+            <li><a href="#services" class="header__item">услуги</a></li>
+         </ul>
+      </header>
+      <main class="page">
+         <section class="first">
+            <div class="first__container">
+               <h1 class="first__title">ВЕБ РАЗРАБОЧИК</h1>
+               <h2 class="first__text">Игорь Лёвин</h2>
+               <a class="btn new__product-link" href="#feedback">Оставить заявку</a>
+            </div>
+         </section>
+         <section id="about" class="about">
+            <h1 class="about__title title">Немного об мне</h1>
+            <div class="about__first-content">
+               <ul class="about__first-list">
+                  <li class="about__first-item">Меня зовут Игорь, я живу в Омске</li>
+                  <li class="about__first-item">Я работаю ведущим веб разработчиком в компании <a href="https://campusagro.com" target="_blank">«Кампус»</a></li>
+                  <li class="about__first-item">Разрабатываю сайты на Laravel, React, Vue и 1С Битрикс</li>
+                  <li class="about__first-item">Также, в свободное время я хожу в зал и играю на гитаре</li>
+               </ul>
+               <img src="src/img/me.jpg" alt="">
+            </div>
+         </section>
+         <section id="services" class="services">
+            <h1 class="services__title title">Услуги</h1>
+            <div class="services__container">
+               <ul class="services__list">
+                  <li>
+                     <h2>Одностраничный сайт</h2>
+                     <b>от 10 000 руб</b>
+                     <p>Одностраничный сайт (Landing page) идеально подойдёт для небольшого бизнеса, презентации компании, продукта или услуги</p>
+                     <a href="https://t.me/igorLiovin105" target="_blank" class="btn">Обсудить проект</a>
+                  </li>
+                  <li>
+                     <h2>Корпоративный сайт</h2>
+                     <b>от 30 000 руб</b>
+                     <p>Корпоративный сайт помогает презентовать компанию, её услуги и сервис. Как правило состоит из 3 и более страниц</p>
+                     <a href="https://t.me/igorLiovin105" target="_blank" class="btn">Обсудить проект</a>
+                  </li>
+               </ul>
+               <div class="services__text">
+                  <p>Все цены указанные здесь - <b>примерные</b></p>
+                  <p>Окончальная цена и сроки формируются после утверждения проекта</p>
+               </div>
+            </div>
+         </section>
+         <section id="feedback" class="feedback">
+            <h1 class="feedback__title title">Свзаться со мной</h1>
+            <form id="form" class="feedback__form">
+               <div class="feedback__form-inputs">
+                  <input type="text" name="name" id="name" placeholder="Ваше имя">
+                  <input type="text" name="phone" id="phone" inputmode="numeric" placeholder="Ваш телефон">
+               </div>
+               <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
+               <button type="submit" id="button" class="feedback__form-btn btn">Оставить заявку</button>
+            </form>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="footer__links">
+            <p>Мой ВК: <a href="https://vk.com/igorliovin105" target="_blank">@igorLiovin105</a></p>
+            <p>Мой телеграм: <a href="https://t.me/igorLiovin105" target="_blank">@igorLiovin105</a></p>
+            <p>All rights recieved</p>
+         </div>
+         <div class="footer__copy">
+            <a href="tel:89659777012" target="_blank">+7(965)-977-7012</a>
+            <p>Омск</p>
+            <a href="mailto:igorliovin07@gmail.com" target="_blank">igorliovin07@gmail.com</a>
+         </div>
+      </footer>
+   </div>
+   <script src="src/js/feedback.js"></script>
+</body>
+</html>

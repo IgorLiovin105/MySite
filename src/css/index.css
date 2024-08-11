@@ -1,0 +1,135 @@
+body.active {
+   overflow: hidden;
+}
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 15vh;
+   margin: 0 auto;
+   z-index: 1;
+}
+.header__list {
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 1fr;
+   place-items: center;
+}
+.header__item {
+   font-size: 1.8vw;
+}
+.header__item.logo {
+   font-size: 3.5vw;
+}
+.first {
+   width: 100vw;
+   height: 100vh;
+   background: url(../img/main-img.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+.first__container {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 5vh;
+   backdrop-filter: brightness(30%) saturate(50%);
+}
+.first__title {
+   font-weight: 500;
+}
+.first__text {
+   font-weight: 400;
+}
+.about__first-content {
+   width: 80vw;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: max-content;
+   align-items: center;
+}
+.about__first-content img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+}
+.about__first-list {
+   display: flex;
+   flex-direction: column;
+   gap: 4vh;
+}
+.about__first-item {
+   font-size: 1.7vw;
+   padding: .2vh 0 .2vh 1vw;
+   border-left: 1px solid #00aa55;
+}
+.about__first-item a {
+   font-size: 1.7vw;
+}
+.services__container {
+   width: 80vw;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 5vw;
+}
+.services__list {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 6vh;
+}
+.services__list li {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   gap: 3vh;
+}
+.feedback__form {
+   width: 50vw;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 3vh;
+}
+.feedback__form-inputs {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 3vh;
+}
+.footer {
+   width: 100%;
+   margin-top: 5vh;
+   padding: 5vh 5vw;
+   display: flex;
+   justify-content: space-between;
+   background: #00aa55;
+}
+.footer p,
+.footer a {
+   color: #000;
+}
+.footer__links {
+   display: flex;
+   flex-direction: column;
+   gap: 4vh;
+}
+.footer__copy {
+   display: flex;
+   flex-direction: column;
+   align-items: end;
+   gap: 2vh;
+}
+.footer__copy p,
+.footer__copy a {
+   font-size: 1.2vw;
+}
