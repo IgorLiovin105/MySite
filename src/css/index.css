@@ -114,10 +114,6 @@ body.active {
    justify-content: space-between;
    background: #00aa55;
 }
-.footer p,
-.footer a {
-   color: #000;
-}
 .footer__links {
    display: flex;
    flex-direction: column;
