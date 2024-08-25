@@ -6,12 +6,14 @@ document.getElementById('form').addEventListener('submit', (e) => {
    const name = document.getElementById('name').value
    const phone = document.getElementById('phone').value
    const question = document.getElementById('question').value
-   fetch(`${url}&text=${name},${phone},${question}`)
-   .then(response => {
-      if(response.ok) {
-         document.getElementById('name').value = ''
-         document.getElementById('phone').value = ''
-         document.getElementById('question').value = ''
-      }
-   })
+   if(name !== '' && phone !== '' && question !== '') {
+      fetch(`${url}&text=${name},${phone},${question}`)
+      .then(response => {
+         if(response.ok) {
+            document.getElementById('name').value = ''
+            document.getElementById('phone').value = ''
+            document.getElementById('question').value = ''
+         }
+      })
+   }
 })
