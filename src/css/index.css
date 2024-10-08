@@ -1,6 +1,7 @@
 body.active {
    overflow: hidden;
 }
+
 .header {
    position: absolute;
    top: 0;
@@ -10,6 +11,7 @@ body.active {
    margin: 0 auto;
    z-index: 1;
 }
+
 .header__list {
    width: 100%;
    height: 100%;
@@ -18,12 +20,15 @@ body.active {
    grid-template-rows: 1fr;
    place-items: center;
 }
+
 .header__item {
    font-size: 1.8vw;
 }
+
 .header__item.logo {
    font-size: 3.5vw;
 }
+
 .first {
    width: 100vw;
    height: 100vh;
@@ -33,6 +38,7 @@ body.active {
    background-repeat: no-repeat;
    background-attachment: fixed;
 }
+
 .first__container {
    width: 100%;
    height: 100%;
@@ -43,12 +49,15 @@ body.active {
    gap: 5vh;
    backdrop-filter: brightness(30%) saturate(50%);
 }
+
 .first__title {
    font-weight: 500;
 }
+
 .first__text {
    font-weight: 400;
 }
+
 .about__first-content {
    width: 80vw;
    margin: 0 auto;
@@ -57,24 +66,29 @@ body.active {
    grid-template-rows: max-content;
    align-items: center;
 }
+
 .about__first-content img {
    width: 100%;
    height: 100%;
    object-fit: contain;
 }
+
 .about__first-list {
    display: flex;
    flex-direction: column;
    gap: 4vh;
 }
+
 .about__first-item {
    font-size: 1.7vw;
    padding: .2vh 0 .2vh 1vw;
    border-left: 1px solid #00aa55;
 }
+
 .about__first-item a {
    font-size: 1.7vw;
 }
+
 .services__container {
    width: 80vw;
    margin: 0 auto;
@@ -82,18 +96,27 @@ body.active {
    grid-template-columns: repeat(2, 1fr);
    gap: 5vw;
 }
+
 .services__list {
    display: flex;
    flex-direction: column;
    align-items: start;
    gap: 6vh;
 }
+
 .services__list li {
    display: flex;
    flex-direction: column;
    align-items: start;
    gap: 3vh;
 }
+
+.services__text {
+   display: flex;
+   flex-direction: column;
+   gap: 2vh;
+}
+
 .feedback__form {
    width: 50vw;
    margin: 0 auto;
@@ -101,11 +124,13 @@ body.active {
    flex-direction: column;
    gap: 3vh;
 }
+
 .feedback__form-inputs {
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    gap: 3vh;
 }
+
 .footer {
    width: 100%;
    margin-top: 5vh;
@@ -114,17 +139,20 @@ body.active {
    justify-content: space-between;
    background: #151515;
 }
+
 .footer__links {
    display: flex;
    flex-direction: column;
    gap: 4vh;
 }
+
 .footer__copy {
    display: flex;
    flex-direction: column;
    align-items: end;
    gap: 2vh;
 }
+
 .footer__copy p,
 .footer__copy a {
    font-size: 1.2vw;

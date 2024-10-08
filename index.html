@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
    <link rel="stylesheet" href="src/css/media.css">
    <link rel="stylesheet" href="src/css/dark.css">
 </head>
+
 <body>
    <div class="wrapper">
       <header class="header">
@@ -34,33 +36,58 @@
             <div class="about__first-content">
                <ul class="about__first-list">
                   <li class="about__first-item">Меня зовут Игорь, я живу в Омске</li>
-                  <li class="about__first-item">Я работаю ведущим веб разработчиком в компании <a href="https://campusagro.com" target="_blank">«Кампус»</a></li>
-                  <li class="about__first-item">Разрабатываю сайты на Laravel, React, Vue и 1С Битрикс</li>
+                  <li class="about__first-item">Я работаю ведущим веб разработчиком в компании <a
+                        href="https://campusagro.com" target="_blank">«Кампус»</a></li>
+                  <li class="about__first-item">Разрабатываю сайты на Laravel и 1С Битрикс</li>
                   <li class="about__first-item">Также, в свободное время я хожу в зал и играю на гитаре</li>
                </ul>
                <img src="src/img/me.jpg" alt="">
             </div>
          </section>
+         <!-- <section id="gallery" class="gallery">
+            <h1 class="gallery__title title">Мои работы</h1>
+            <ul class="gallery__container">
+               
+            </ul>
+         </section> -->
          <section id="services" class="services">
             <h1 class="services__title title">Услуги</h1>
             <div class="services__container">
                <ul class="services__list">
                   <li>
                      <h2>Одностраничный сайт</h2>
-                     <b>от 10 000 руб</b>
-                     <p>Одностраничный сайт (Landing page) идеально подойдёт для небольшого бизнеса, презентации компании, продукта или услуги</p>
+                     <b>от 30 000 руб</b>
+                     <p>
+                        Одностраничный сайт (Landing page) идеально подойдёт для небольшого бизнеса, презентации
+                        компании, продукта или услуги
+                     </p>
                      <a href="https://t.me/igorLiovin105" target="_blank" class="btn">Обсудить проект</a>
                   </li>
                   <li>
                      <h2>Корпоративный сайт</h2>
-                     <b>от 30 000 руб</b>
-                     <p>Корпоративный сайт помогает презентовать компанию, её услуги и сервис. Как правило состоит из 3 и более страниц</p>
+                     <b>от 50 000 руб</b>
+                     <p>
+                        Корпоративный сайт помогает презентовать компанию, её услуги и сервис. Как правило состоит из 3
+                        и более страниц
+                     </p>
+                     <a href="https://t.me/igorLiovin105" target="_blank" class="btn">Обсудить проект</a>
+                  </li>
+                  <li>
+                     <h2>Интернет магазин</h2>
+                     <b>от 80 000 руб</b>
+                     <p>
+                        С помощью интернет-магазина вы получите удобный инструмент для продаж товаров или услуг, а также
+                        доступ к новой аудитории покупателей
+                     </p>
                      <a href="https://t.me/igorLiovin105" target="_blank" class="btn">Обсудить проект</a>
                   </li>
                </ul>
                <div class="services__text">
-                  <p>Все цены указанные здесь - <b>примерные</b></p>
-                  <p>Окончальная цена и сроки формируются после утверждения проекта</p>
+                  <p><b>Вся разработка - под ключ</b></p>
+                  <p>
+                     В ходе разработки будут пройдены все этапы разработки сайта, от создания уникального дизайна в
+                     вашем фирменном стиле, до публикации его на хостинг
+                  </p>
                </div>
             </div>
          </section>
@@ -68,10 +95,12 @@
             <h1 class="feedback__title title">Свзаться со мной</h1>
             <form id="form" class="feedback__form">
                <div class="feedback__form-inputs">
-                  <input type="text" name="name" id="name" placeholder="Ваше имя">
-                  <input type="text" name="phone" id="phone" inputmode="numeric" placeholder="Ваш телефон">
+                  <input type="text" name="name" id="name" placeholder="Ваше имя" required pattern="^[А-Яа-яЁё\s]+$">
+                  <input class="tel" type="text" name="phone" id="phone" inputmode="numeric" placeholder="Ваш телефон"
+                     required>
                </div>
-               <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
+               <textarea name="question" id="question" placeholder="Ваш вопрос" pattern="^[А-Яа-яЁё\s]+$"
+                  required></textarea>
                <button type="submit" id="button" class="feedback__form-btn btn">Оставить заявку</button>
             </form>
          </section>
@@ -91,4 +120,5 @@
    </div>
    <script src="src/js/feedback.js"></script>
 </body>
+
 </html>
