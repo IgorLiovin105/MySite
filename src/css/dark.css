@@ -1,6 +1,9 @@
-html, body, .wrapper {
-   background: #111;
+html,
+body,
+.wrapper {
+   background: #141414;
 }
+
 * {
-   color: #EEE;
+   color: #BBB;
 }
